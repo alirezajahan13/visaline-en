@@ -1,0 +1,107 @@
+@font-face {
+	font-family: iranyekanfn;
+	font-style: normal;
+	font-weight: bold;
+	src: url('fonts/iranyekanfn/fonts/eot/iranyekanwebboldfanum.eot');
+	src: url('fonts/iranyekanfn/fonts/eot/iranyekanwebboldfanum.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/iranyekanfn/fonts/woff/iranyekanwebboldfanum.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/iranyekanfn/fonts/ttf/iranyekanwebboldfanum.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: iranyekanfn;
+	font-style: normal;
+	font-weight: 100;
+	src: url('fonts/iranyekanfn/fonts/eot/iranyekanwebthinfanum.eot');
+	src: url('fonts/iranyekanfn/fonts/eot/iranyekanwebthinfanum.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/iranyekanfn/fonts/woff/iranyekanwebthinfanum.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/iranyekanfn/fonts/ttf/iranyekanwebthinfanum.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: iranyekanfn;
+	font-style: normal;
+	font-weight: 300;
+	src: url('fonts/iranyekanfn/fonts/eot/iranyekanweblightfanum.eot');
+	src: url('fonts/iranyekanfn/fonts/eot/iranyekanweblightfanum.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/iranyekanfn/fonts/woff/iranyekanweblightfanum.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/iranyekanfn/fonts/ttf/iranyekanweblightfanum.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: iranyekanfn;
+	font-style: normal;
+	font-weight: normal;
+	src: url('fonts/iranyekanfn/fonts/eot/iranyekanwebregularfanum.eot');
+	src: url('fonts/iranyekanfn/fonts/eot/iranyekanwebregularfanum.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/iranyekanfn/fonts/woff/iranyekanwebregularfanum.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/iranyekanfn/fonts/ttf/iranyekanwebregularfanum.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: iranyekanfn;
+	font-style: normal;
+	font-weight: 500;
+	src: url('fonts/iranyekanfn/fonts/eot/iranyekanwebmediumfanum.eot');
+	src: url('fonts/iranyekanfn/fonts/eot/iranyekanwebmediumfanum.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/iranyekanfn/fonts/woff/iranyekanwebmediumfanum.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/iranyekanfn/fonts/ttf/iranyekanwebmediumfanum.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: iranyekanfn;
+	font-style: normal;
+	font-weight: 800;
+	src: url('fonts/iranyekanfn/fonts/eot/iranyekanwebextraboldfanum.eot');
+	src: url('fonts/iranyekanfn/fonts/eot/iranyekanwebextraboldfanum.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/iranyekanfn/fonts/woff/iranyekanwebextraboldfanum.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/iranyekanfn/fonts/ttf/iranyekanwebextraboldfanum.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: iranyekanfn;
+	font-style: normal;
+	font-weight: 900;
+	src: url('fonts/iranyekanfn/fonts/eot/iranyekanwebblackfanum.eot');
+	src: url('fonts/iranyekanfn/fonts/eot/iranyekanwebblackfanum.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/iranyekanfn/fonts/woff/iranyekanwebblackfanum.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/iranyekanfn/fonts/ttf/iranyekanwebblackfanum.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: iranyekanfn;
+	font-style: normal;
+	font-weight: 950;
+	src: url('fonts/iranyekanfn/fonts/eot/iranyekanwebextrablackfanum.eot');
+	src: url('fonts/iranyekanfn/fonts/eot/iranyekanwebextrablackfanum.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/iranyekanfn/fonts/woff/iranyekanwebextrablackfanum.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/iranyekanfn/fonts/ttf/iranyekanwebextrablackfanum.ttf') format('truetype');
+}
+
+// text colors
+$textColorLight: #929292;
+$textColorLighter: #a8a8a8;
+$textColorDark: #003874;
+$textColorLowSat: #505050;
+
+//main colors
+$mainColor: #d1ab66;
+$mainColorDark: #054078;
+$mainColorLight: #eeeeee;
+$backColorDark2: #4f6dce;
+$backColorDark3: #c94646;
+$backColorDark4: #3c3c3c;
+$backColorDark5: #14487f;
+$backColorLight: #f2f2f2;
+$backColorLight2: #989810;
+$backColorLight3: #2b8b8e;
+
+
+
+
+@mixin placeholder {
+	&::-webkit-input-placeholder {@content}
+	&:-moz-placeholder           {@content}
+	&::-moz-placeholder          {@content}
+	&:-ms-input-placeholder      {@content}  
+}

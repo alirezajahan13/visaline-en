@@ -1,0 +1,282 @@
+@import 'sass/variables';
+@import 'sass/source';
+@import 'sass/breakpoints';
+
+.evaluationForm{
+    .evaluationFormStep1Section1 , .evaluationFormStep1Section2 , .evaluationFormStep2Section1 , .evaluationFormStep2Section2 , .evaluationFormStep3Section1, .evaluationFormStep3Section2{
+        display: flex;
+        justify-content: space-around;
+        @include sm{
+            flex-direction: column;
+        }
+    }
+    .evaluationFormInner1 , .evaluationFormInner2 , .evaluationFormInner3 , .evaluationFormInner4 , .evaluationFormInner6 , .evaluationFormInner7 , .evaluationformInner8 ,.evaluationformInner9 , .evaluationFormInner10 , .evaluationFormInner11 ,      .evaluationFormInner12 , .evaluationFormInner13{
+        width: 25%;
+        padding: 20px 0px;
+        @include sm{
+            width: 100%;
+        }
+        span{
+            input{
+                height: 46px;
+            }
+        }
+    }
+    .evaluationFormInner6 , .evaluationformInner8 , .evaluationformInner9 , .evaluationFormInner10 , .evaluationFormInner11 , .evaluationFormInner12 , .evaluationFormInner13{
+        span{
+            select{
+                appearance: none;
+                border-radius: 5px;
+                background-color: #eeeeee;
+                background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAABSElEQVR4nNWTPU7DQBCF3QA1glNAOAINVByAG3geQYgb5AqgWEEgDpBmRqGk4ecEFsySQEEFRyCQjiho7fw4eNfGdBlpmt3x5zezb4JgYcMwtgwjMoyeEXwlyeipoKmdeu3PoNfr4xUjOFehoRGMPPmtTGc93l8uhzHuC0C/864QapguKsCSVEHLO7OSNr3tP0q46QJG/4CNEpWM0zxQ6HlaxGgYoT3DGOQAyVly15idUTcHVEY/80fzcnW0phzuzEEZA3uW3sFk6vuFwLSING5j3Ui4rUKfY/DuU/twVQXxvHL6KG45A50onSkjzY+BHC0Lmu6Bp0rdyjBReJIHduo1awHnB4w3Fbz7bPPABxtOL9p1qmwbRhT4wq6RMt1W8N9NfIklL3AKFbS87Y/btMpKYUEm7DrZDbAvaG2TWoe69gG8M1uI+AFunVwYqMItXgAAAABJRU5ErkJggg==");
+                background-repeat: no-repeat;
+                background-position: left 12px center;
+                border: none;
+            }
+        }
+    }
+    .evaluationFormStep1Section3 , .evaluationFormStep3Section3{
+        padding-right: 150px;
+        @include sm{
+            padding: 0px;
+        }
+        .evaluationFormInner5 , .evaluationFormInner14{
+            height: 46px;
+            padding: 20px 0px;
+            width: 28.7%;
+            @include sm{
+                width: 100%;
+            }
+            span{
+                select{
+                    appearance: none;
+                    border-radius: 5px;
+                    background-color: #eeeeee;
+                    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAABSElEQVR4nNWTPU7DQBCF3QA1glNAOAINVByAG3geQYgb5AqgWEEgDpBmRqGk4ecEFsySQEEFRyCQjiho7fw4eNfGdBlpmt3x5zezb4JgYcMwtgwjMoyeEXwlyeipoKmdeu3PoNfr4xUjOFehoRGMPPmtTGc93l8uhzHuC0C/864QapguKsCSVEHLO7OSNr3tP0q46QJG/4CNEpWM0zxQ6HlaxGgYoT3DGOQAyVly15idUTcHVEY/80fzcnW0phzuzEEZA3uW3sFk6vuFwLSING5j3Ui4rUKfY/DuU/twVQXxvHL6KG45A50onSkjzY+BHC0Lmu6Bp0rdyjBReJIHduo1awHnB4w3Fbz7bPPABxtOL9p1qmwbRhT4wq6RMt1W8N9NfIklL3AKFbS87Y/btMpKYUEm7DrZDbAvaG2TWoe69gG8M1uI+AFunVwYqMItXgAAAABJRU5ErkJggg==");
+                    background-repeat: no-repeat;
+                    background-position: left 12px center;
+                    border: none;
+                }
+            }
+        }
+    }
+    .step4 {
+        .evaluationFormStep4Section1{
+            label{
+                text-align: center;
+            }
+            span{
+                textarea{
+                    margin: 5px auto;
+                    height: 175px !important;
+                    width: 50% !important;
+                    background-color: #eeeeee;
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
+.faqContainer{
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
+    .faqItem{
+        padding: 0 10px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        background-color: #fff;
+        // width: 48%;
+        cursor: pointer;
+        .faqHeader{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            .faqQuestion{
+                margin: 0;
+                font-size: 14.5px;
+                font-weight: 700;
+                width: calc(100% - 30px);
+            }
+            .faqIcon{
+                display: flex;
+                padding: 5px;
+                border-radius: 100%;
+                backdrop-filter: blur(6px);
+                background: rgba(255, 255, 255, 0.7);
+                
+            }
+        }
+        .faqAnswer{
+            font-size: 13.5px;
+            font-weight: 400;
+            margin: 0;
+            padding-bottom: 20px;
+            display: none;
+        }
+    }
+}
+
+.aboutSectionBack{
+    .aboutSectionParent{
+        .aboutimg{
+            img{
+                border-radius: 5px;
+            }
+        }
+    }
+    .aboutSectionDesc {
+        .bigHeading{
+            margin: 0;
+        }
+    }
+}
+.mainOverlay{
+    opacity: 0;
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+.summarySectionParent{
+    padding: 20px;
+    p{
+        text-align: justify;
+        line-height: 32px;
+    }
+}
+.serviceSectionBack{
+    .serviceBoxOne{
+        h5,h6{
+            margin: 20px 0px 10px 0px;
+        }
+        h6{
+            font-size: 14.5px !important;
+        }
+    }
+    .serviceBoxFive{
+        .serviceGrid{
+            .text-item{
+                h5{
+                    font-size: 15px;
+                }
+                p{
+                    font-size: 15px;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}
+.comments-area{
+    .comment-list{
+        padding: 0;
+        margin: 0;
+        li{
+            padding: 20px;
+            background-color: #fff;
+            border: 2px solid #eeeeee;
+            border-radius: 5px;
+            @include xs{
+                padding: 15px 10px;
+            }
+            &::before{
+                content: none;
+            }
+            .comment-body{
+                padding: 0px 20px 20px 20px;
+            }
+            .comment-meta{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                @include xs{
+                    flex-direction: column;
+                    margin-bottom: 5px;
+                }
+                .comment-author{
+                    display: flex;
+                    align-items: center;
+                    @include xs{
+                        margin-bottom: 5px;
+                        margin-left: auto;
+                        font-size: 13px;
+                    }
+                    img{
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 100%;
+                        margin: 0px 0px 5px 20px;
+                        @include xs{
+                            width: 30px;
+                            height: 30px;
+                            margin: 0 0 5px 5px;
+                        }
+                    }
+                    b{
+                        margin-left: 5px;
+                    }
+                }
+                .comment-metadata{
+                    @include xs{
+                        margin-left: auto;
+                        font-size: 12px;
+                    }
+                    time{
+                        color: #b5b5b5;
+                    }
+                }
+            }
+            .comment-content{
+                width: 87%;
+                margin: 10px auto;
+                @include xs{
+                    font-size: 13px;
+                }
+                p{
+                    @include xs{
+                        line-height: 23px;
+                    }
+                }
+            }
+            .reply{
+                display: flex;
+                flex-direction: row-reverse;
+                a{
+                    padding: 7px 20px;
+                    border-radius: 5px;
+                    background-color: #d1ab66;
+                    color: #fff;
+                    border: none;
+                    cursor: pointer;
+                    transition: all 0.3s;
+                    &:hover{
+                        background-color: #054078;
+                    }
+                    @include xs{
+                        font-size: 13px;
+                        padding: 5px 15px;
+                    }
+                }
+            }
+            .children{
+                @include xs{
+                    padding-right: 20px;
+                }
+                li{
+                    .comment-body{
+                        padding: 0px;
+                    }
+                    .comment-metadata{
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+    }
+}

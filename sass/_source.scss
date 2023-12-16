@@ -1,0 +1,405 @@
+@import 'breakpoints.scss';
+body{
+    font-family: iranyekanfn !important;
+    direction: rtl;
+	margin: 0;
+    padding: 0;
+	overflow-x: hidden !important;
+	width: 100% !important;
+	font-size: 14.5px;
+}
+*{
+	box-sizing: border-box;
+	direction: rtl;
+	// overflow-x: hidden !important;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-tap-highlight-color: transparent;
+	
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+p{
+	line-height: 27px;
+	color: $textColorLowSat;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+h1, h2, h3, h4, h5, h6,input, textarea {
+	font-family: iranyekanfn !important;
+}
+h1{
+	font-size: 26px;
+}
+h2{
+	font-size: 23px;
+}
+h3{
+	font-size: 20px;
+}
+h4{
+	font-size: 18px;
+}
+h5{
+	font-size: 16px;
+}
+h6{
+	font-size: 14px;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight: 800;
+	color: $textColorDark;
+}
+.colorHeading{
+	color: $textColorDark;
+}
+.lowMargined{
+	margin: 7px 0;
+}
+.mediumMargined{
+	margin: 15px 0;
+}
+.highMargined{
+	margin: 30px 0;
+}
+.extraHighMargined{
+	margin: 60px 0;
+}
+.lowPadding{
+	padding: 7px;
+}
+.mediumPadding{
+	padding: 15px;
+}
+.highPadding{
+	padding: 30px;
+}
+.sectionPadding{
+	padding: 50px 0;
+	@include sm{
+		padding: 30px 0;
+	}
+}
+.centeredText{
+	text-align: center;
+}
+.noPadding{
+	padding: 0;
+}
+.noMargin{
+	margin: 0;
+}
+.generalHeading{
+	h1,h2,h3,h4,h5,h6{
+		margin: 0;
+		
+	}
+	@include xs{
+		h2{
+			font-size: 18px;
+		}
+	}
+}
+.bigHeading{
+	h1,h2,h3,h4,h5,h6{
+		font-size: 35px;
+	}
+}
+.mediumWeight{
+	font-weight: 400;
+}
+.justified{
+	text-align: justify;
+}
+.lightParagraph{
+	font-weight: 200;
+}
+.lightText{
+	color: $textColorLight;
+}
+.lighterText{
+	color: $textColorLighter;
+}
+.smallText{
+	font-size: 13px;
+}
+.smallerText{
+	font-size: 12px;
+}
+.lowRadius{
+	border-radius: 5px;
+}
+.highRadius{
+	border-radius: 25px;
+}
+.darkBorder{
+	border: 1px solid $backColorLight3;
+}
+.lightBorder{
+	border: 2px solid $mainColorLight;
+}
+.bottomBorder{
+    border-bottom: 1px solid $mainColorLight;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+button{
+    font-family: iranyekanfn !important;
+	cursor: pointer;
+}
+a,a:visited{
+	text-decoration: none;
+	color: lighten(#505050,5%);
+}
+li{
+	list-style-type: none;
+	margin: 7px 0;
+	position: relative;
+	padding-right: 12px;
+	color: $textColorLowSat;
+	&::before{
+		content: '';
+		position: absolute;
+		width: 6px;
+		height: 6px;
+		border-radius: 100%;
+		background-color: $mainColor;
+		top: 0;
+		bottom: 0;
+		margin-top: auto;
+		margin-bottom: auto;
+		right: 0;
+	}
+}
+.darkListStyle{
+	&::before{
+		background-color: $mainColorDark;
+	}
+}
+.noListStyle{
+	padding-right: 0;
+	&::before{
+		display: none;
+	}
+}
+.checkListStyle{
+	padding-right: 20px;
+	&::before{
+		content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2340b819' width='14' height='14' viewBox='0 0 512 512'%3E%3Cpath d='M172.2 434.6a39.3 39.3 0 0 1-28.1-11.6L22.9 301.9a33.4 33.4 0 1 1 47.2-47.2l102.1 102.2L441.9 87.1a33.4 33.4 0 0 1 47.2 47.2L200.4 423a39.7 39.7 0 0 1-28.2 11.6Z'/%3E%3C/svg%3E");
+		width: 14px;
+		height: 14px;
+		background-color: initial;
+	}
+}
+.crossListStyle{
+	padding-right: 20px;
+	&::before{
+		content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23b82819' width='12' height='12' viewBox='0 0 512 512'%3E%3Cpath d='M312.2 255.8 482 86a33.5 33.5 0 1 0-47.4-47.4L264.8 208.4 95 38.6a33.5 33.5 0 0 0-47.4 0 33.5 33.5 0 0 0 0 47.4l169.8 169.8L47.6 425.6a33.5 33.5 0 0 0 0 47.4 33.5 33.5 0 0 0 47.4 0l169.8-169.8L434.6 473a33.5 33.5 0 0 0 47.4 0 33.5 33.5 0 0 0 0-47.4Z'/%3E%3C/svg%3E");
+		width: 12px;
+		height: 17px;
+		background-color: initial;
+	}
+}
+.arrowListStyle{
+	padding-right: 22px;
+	&::before{
+		content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23054078' width='16' height='16' viewBox='0 0 512 512'%3E%3Cpath d='M256 493.4a237.3 237.3 0 1 1 167.9-69.5A236.2 236.2 0 0 1 256 493.4Zm0-424.8C152.7 68.6 68.6 152.7 68.6 256S152.7 443.4 256 443.4 443.4 359.3 443.4 256 359.3 68.6 256 68.6Zm-23.6 283.2a24.9 24.9 0 0 1-17.7-7.3l-70.8-70.8h-.1a.1.1 0 0 0-.1-.1h-.2a23.2 23.2 0 0 1-4.9-7.5h-.1a24.7 24.7 0 0 1-1.9-9.4 24.8 24.8 0 0 1 2-9.5h.1a21.3 21.3 0 0 1 2.3-4.2 19.5 19.5 0 0 1 1.7-2.3h.1a8 8 0 0 1 1.3-1.3l70.6-70.7a25 25 0 0 1 35.4 35.4L222 231h128.4a25 25 0 0 1 0 50H222l28.1 28.1a25.2 25.2 0 0 1 0 35.4 24.9 24.9 0 0 1-17.7 7.3Z'/%3E%3C/svg%3E");
+		width: 16px;
+		height: 19px;
+		background-color: initial;
+	}
+}
+label{
+	display: block;
+	margin-bottom: 15px;
+	font-size: 13px;
+	text-align: right;
+	width: 100%;
+	// padding-right: 15px;
+}
+input{
+	margin-top: 5px;
+	display: block;
+	width: 100%;
+	padding: 10px 20px;
+	&[type=text] , &[type=password] , &[type=email] , &[type=tel] , &[type=url]{
+		border: none;
+		background-color: $mainColorLight;
+		border-radius: 5px;
+		color: $textColorLowSat;
+		font-size: 14px;
+		margin-right: -2px;
+		@include placeholder{
+			color: #929292;
+			opacity: 0.25;
+		}
+	}
+	&[type=checkbox]{
+		width: max-content;
+		margin: 0;
+	}
+	&[type=submit]{
+		background-color: $mainColor;
+		color: #fff;
+		border: none;
+		font-weight: 400;
+		padding: 15px 25px;
+		cursor: pointer;
+		transition: all 0.3s;
+		border-radius: 5px;
+		font-size: 14px;
+		&:hover{
+			background-color: $mainColorDark;
+		}
+	}
+	&:focus{
+		outline: none;
+	}
+}
+textarea{
+	margin-top: 5px;
+	display: block;
+	width: 100%;
+	height: 150px;
+	padding: 10px 20px;
+	resize: none;
+	border-radius: 8px;
+	background-color: #eeeeee;
+	border: 1px solid $mainColorLight;
+	color: $textColorLowSat;
+	font-size: 14px;
+	// margin-right: -15px;
+	@include placeholder{
+		color: #929292;
+		opacity: 0.25;
+	}
+	&:focus{
+		outline: none;
+	}
+}
+select{
+	margin-top: 5px;
+	display: block;
+	width: 100%;
+	padding: 15px 10px;
+	border: 1px solid #e2e5fc;
+	font-family:  iranyekanfn !important;
+	background-color: transparent;
+	margin-right: -2px;
+	option{
+		font-family: iranyekanfn !important;
+	}
+}
+.generalButton{
+    background-color: $mainColor;
+    border-radius: 5px;
+    position: relative;
+    color: #fff !important;
+    padding: 10px 25px 10px 45px;
+    font-size: 14.5px;
+    display: block;
+    width: max-content;
+	transition: all 0.3s;
+	border: none;
+	cursor: pointer;
+    &::before{
+        content: '';
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        background-color: #fff;
+        left: 15px;
+        top: 0;
+        bottom: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+        border-radius: 100%;
+    }
+    &::after{
+        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23d1ab66' width='10' height='10' viewBox='0 0 512 512'%3E%3Cpath d='M357.6 500.8a18.3 18.3 0 0 1-12.9-5.4L152 302.7a66.1 66.1 0 0 1 0-93.4L344.7 16.6a18.2 18.2 0 1 1 25.8 25.8L177.8 235.1a29.5 29.5 0 0 0 0 41.8l192.7 192.7a18.3 18.3 0 0 1 0 25.8 17.9 17.9 0 0 1-12.9 5.4Z'/%3E%3C/svg%3E");
+        height: 24px;
+        position: absolute;
+        left: 19px;
+        top: 0;
+        bottom: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+	&:hover{
+		background-color: $mainColorDark;
+	}
+}
+.noArrowButton{
+	padding: 10px 25px;
+	&::before{
+		display: none;
+	}
+	&::after{
+		display: none;
+	}
+}
+.outlineButton{
+	background-color: #fff;
+	color: #505050 !important;
+	border: 1px solid $backColorLight;
+	// &::before{
+	// 	// background-color: $lowSatColor;
+	// }
+	&:hover{
+		background-color: $backColorLight;
+	}
+}
+.borderNoneButton{
+	border: none;
+	color: #505050 !important;
+	background-color: #fff;
+	&:hover{
+		background-color: $backColorLight;
+	}
+}
+.mainBoxBack{
+	background-color: $mainColor;
+	color: #fff !important;
+	p{
+		color: #fff !important;
+	}
+}
+.darkBoxBack{
+	background-color: $mainColorDark;
+	color: #fff !important;
+	p{
+		color: #fff !important;
+	}
+}
+.lightBoxBack{
+	background-color: $mainColorLight;
+}
+table{
+	width: 100% !important;
+	border-collapse: collapse;
+	margin: 20px 0;
+	border-style: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px #dfdfdf;
+	th{
+		text-align: right;
+		border: 1px solid rgba(13, 84, 131,0.1);
+		padding: 12px;
+	}
+	tr{
+		&:nth-child(2n+1) {
+			background-color: rgba(226, 229, 252,0.3);
+		}
+	}
+	td {
+		font-size: 13.5px;
+		padding: 8px 4px;
+		font-weight: 400;
+		border: 1px solid rgba(13, 84, 131,0.1);
+		padding: 15px 10px;
+		strong {
+			font-weight: 600;
+		}
+	}
+}
