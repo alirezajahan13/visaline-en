@@ -139,7 +139,7 @@ function visaline_scripts() {
 	wp_enqueue_style( 'visaline-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_enqueue_style( 'additional-style', get_template_directory_uri().'/additional.css', array(), _S_VERSION );
 	wp_enqueue_style( 'intlTelInput', get_template_directory_uri().'/intl/build/css/intlTelInput.css', array(), _S_VERSION );
-	wp_style_add_data( 'visaline-style', 'rtl', 'replace' );
+	// wp_style_add_data( 'visaline-style', 'rtl', 'replace' );
 	wp_enqueue_script('jquery');
 	wp_enqueue_script( 'visaline-home', get_template_directory_uri() . '/js/home.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'visaline-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );

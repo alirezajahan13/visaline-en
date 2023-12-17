@@ -79,7 +79,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 }
 body {
   font-family: iranyekanfn !important;
-  direction: rtl;
+  direction: ltr;
   margin: 0;
   padding: 0;
   overflow-x: hidden !important;
@@ -89,7 +89,7 @@ body {
 
 * {
   box-sizing: border-box;
-  direction: rtl;
+  direction: ltr;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
 }

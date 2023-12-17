@@ -22,7 +22,7 @@ $visaline_home_contactus = get_field('visaline_home_contactus');
             <img src="<?php echo $visaline_home_banner['photo']['url'] ?>" alt="<?php echo $visaline_home_banner['photo']['alt'] ?>">
         </div>
         <div class="bookAppointmentSection lowRadius">
-            <?php echo do_shortcode('[contact-form-7 id="22b6b60" title="رزرو وقت مشاوره (صفحه اصلی)"]') ?>
+            <?php echo do_shortcode('[contact-form-7 id="ac69fce" title="book consultation (Home)"]') ?>
         </div>
     </div>
 </div>
@@ -95,7 +95,7 @@ $visaline_home_contactus = get_field('visaline_home_contactus');
                     <span class="lightParagraph"><?php echo $visaline_home_ignQuestions['visaline_home_ignQuestions_1']['description']; ?></span>
                 </div>
                 <div class="ignQuestionLink">
-                    <a class="generalButton borderNoneButton noArrowButton" href="<?php echo $visaline_home_ignQuestions['visaline_home_ignQuestions_1']['link']['url']; ?>" target="<?php echo $visaline_home_ignQuestions['visaline_home_ignQuestions_1']['link']['target']; ?><?php echo $visaline_home_ignQuestions['visaline_home_ignQuestions_1']['link']['title']; ?>" class="generalButton noArrowButton mediumMargined">ادامه مطلب</a>
+                    <a class="generalButton borderNoneButton noArrowButton" href="<?php echo $visaline_home_ignQuestions['visaline_home_ignQuestions_1']['link']['url']; ?>" target="<?php echo $visaline_home_ignQuestions['visaline_home_ignQuestions_1']['link']['target']; ?><?php echo $visaline_home_ignQuestions['visaline_home_ignQuestions_1']['link']['title']; ?>" class="generalButton noArrowButton mediumMargined">Read More</a>
                 </div>
             </div>
             <div class="ignQuestionBoxs lowRadius highPadding">
@@ -104,7 +104,7 @@ $visaline_home_contactus = get_field('visaline_home_contactus');
                     <span class="lightParagraph"><?php echo $visaline_home_ignQuestions['visaline_home_ignQuestions_2']['description']; ?></span>
                 </div>
                 <div class="ignQuestionLink">
-                    <a class="generalButton borderNoneButton noArrowButton" href="<?php echo $visaline_home_ignQuestions['visaline_home_ignQuestions_2']['link']['url']; ?>" target="<?php echo $visaline_home_ignQuestions['visaline_home_ignQuestions_2']['link']['target']; ?><?php echo $visaline_home_ignQuestions['visaline_home_ignQuestions_2']['link']['title']; ?>" class="generalButton noArrowButton mediumMargined">ادامه مطلب</a>
+                    <a class="generalButton borderNoneButton noArrowButton" href="<?php echo $visaline_home_ignQuestions['visaline_home_ignQuestions_2']['link']['url']; ?>" target="<?php echo $visaline_home_ignQuestions['visaline_home_ignQuestions_2']['link']['target']; ?><?php echo $visaline_home_ignQuestions['visaline_home_ignQuestions_2']['link']['title']; ?>" class="generalButton noArrowButton mediumMargined">Read More</a>
                 </div>
             </div>
             <div class="ignQuestionBoxs lowRadius highPadding">
@@ -113,7 +113,7 @@ $visaline_home_contactus = get_field('visaline_home_contactus');
                     <span class="lightParagraph"><?php echo $visaline_home_ignQuestions['visaline_home_ignQuestions_3']['description']; ?></span>
                 </div>
                 <div class="ignQuestionLink">
-                    <a class="generalButton borderNoneButton noArrowButton" href="<?php echo $visaline_home_ignQuestions['visaline_home_ignQuestions_3']['link']['url']; ?>" target="<?php echo $visaline_home_ignQuestions['visaline_home_ignQuestions_3']['link']['target']; ?><?php echo $visaline_home_ignQuestions['visaline_home_ignQuestions_3']['link']['title']; ?>" class="generalButton noArrowButton mediumMargined">ادامه مطلب</a>
+                    <a class="generalButton borderNoneButton noArrowButton" href="<?php echo $visaline_home_ignQuestions['visaline_home_ignQuestions_3']['link']['url']; ?>" target="<?php echo $visaline_home_ignQuestions['visaline_home_ignQuestions_3']['link']['target']; ?><?php echo $visaline_home_ignQuestions['visaline_home_ignQuestions_3']['link']['title']; ?>" class="generalButton noArrowButton mediumMargined">Read More</a>
                 </div>
             </div>
             <div class="ignQuestionBoxs lowRadius highPadding">
@@ -122,7 +122,7 @@ $visaline_home_contactus = get_field('visaline_home_contactus');
                     <span class="lightParagraph"><?php echo $visaline_home_ignQuestions['visaline_home_ignQuestions_4']['description']; ?></span>
                 </div>
                 <div class="ignQuestionLink">
-                    <a class="generalButton borderNoneButton noArrowButton" href="<?php echo $visaline_home_ignQuestions['visaline_home_ignQuestions_4']['link']['url']; ?>" target="<?php echo $visaline_home_ignQuestions['visaline_home_ignQuestions_4']['link']['target']; ?><?php echo $visaline_home_ignQuestions['visaline_home_ignQuestions_4']['link']['title']; ?>" class="generalButton noArrowButton mediumMargined">ادامه مطلب</a>
+                    <a class="generalButton borderNoneButton noArrowButton" href="<?php echo $visaline_home_ignQuestions['visaline_home_ignQuestions_4']['link']['url']; ?>" target="<?php echo $visaline_home_ignQuestions['visaline_home_ignQuestions_4']['link']['target']; ?><?php echo $visaline_home_ignQuestions['visaline_home_ignQuestions_4']['link']['title']; ?>" class="generalButton noArrowButton mediumMargined">Read More</a>
                 </div>
             </div>
         </div>
@@ -130,11 +130,11 @@ $visaline_home_contactus = get_field('visaline_home_contactus');
 </div>
 <div class="contactUsHomeSectionBack">
     <div class="generalHeading highMargined centeredText mainView">
-        <h2>تماس با ما</h2>
+        <h2>Contact Us</h2>
     </div>
     <div class="contactUsHomeSection mainView">
         <div class="contactUsHomeParent">
-            <div class="contactUsHomeFormParent lowRadius lightBorder highPadding"><?php echo do_shortcode('[contact-form-7 id="4827e5e" title="فرم تماس با ما (صفحه اصلی)"]') ?></div>
+            <div class="contactUsHomeFormParent lowRadius lightBorder highPadding"><?php echo do_shortcode('[contact-form-7 id="8644244" title="Contact Us form (Home)"]') ?></div>
                 <div class="communicationSection">
                     <div class="communicationSectionInner">
                         <div class="communicationSectionInner1">
