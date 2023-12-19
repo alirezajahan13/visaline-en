@@ -1,13 +1,10 @@
 <?php 
 /*
-
 Template Name: Unsuccess Template
-
 */
-get_header();
+get_header(); 
 $visaline_bookConsultation_unsuccess = get_field('visaline_bookConsultation_unsuccess');
 ?>
-
 <div class="unsuccessSectionBack">
     <div class="unsuccessSection mainView">
         <div class="unsuccessSectionDesc">
@@ -16,7 +13,7 @@ $visaline_bookConsultation_unsuccess = get_field('visaline_bookConsultation_unsu
                     <?php echo $visaline_bookConsultation_unsuccess['icon']; ?>
                 </div>
                 <div class="unsuccess-text">
-                    <p><span id="nameClient"></span> عزیز</p>
+                    <p>Dear <span id="nameClient"></span></p>
                     <p><?php echo $visaline_bookConsultation_unsuccess['heading']; ?></p>
                     <p><?php echo $visaline_bookConsultation_unsuccess['sub_heading']; ?></p>
                 </div>
@@ -24,7 +21,4 @@ $visaline_bookConsultation_unsuccess = get_field('visaline_bookConsultation_unsu
         </div>
     </div>
 </div>
-
-<?php
-get_footer();
-?>
+<?php get_footer(); ?>

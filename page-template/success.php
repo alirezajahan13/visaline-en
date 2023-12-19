@@ -1,13 +1,10 @@
 <?php 
 /*
-
 Template Name: Success Template
-
 */
 get_header();
 $visaline_bookConsultation_success = get_field('visaline_bookConsultation_success');
 ?>
-
 <div class="successSectionBack">
     <div class="successSection mainView">
         <div class="successSectionDesc">
@@ -16,7 +13,7 @@ $visaline_bookConsultation_success = get_field('visaline_bookConsultation_succes
                     <?php echo $visaline_bookConsultation_success['icon']; ?>
                 </div>
                 <div class="success-text">
-                    <p><span id="nameClient"></span> عزیز</p>
+                    <p>Dear <span id="nameClient"></span></p>
                     <p><?php echo $visaline_bookConsultation_success['heading']; ?></p>
                     <p><?php echo $visaline_bookConsultation_success['sub_heading']; ?></p>
                 </div>
@@ -24,7 +21,4 @@ $visaline_bookConsultation_success = get_field('visaline_bookConsultation_succes
         </div>
     </div>
 </div>
-
-<?php
-get_footer();
-?>
+<?php get_footer(); ?>

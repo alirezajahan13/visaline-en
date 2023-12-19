@@ -55,7 +55,7 @@
   src: url("fonts/iranyekanfn/fonts/eot/iranyekanwebextrablackfanum.eot?#iefix") format("embedded-opentype"), url("fonts/iranyekanfn/fonts/woff/iranyekanwebextrablackfanum.woff") format("woff"), url("fonts/iranyekanfn/fonts/ttf/iranyekanwebextrablackfanum.ttf") format("truetype");
 }
 body {
-  font-family: iranyekanfn !important;
+  font-family: Segoe UI !important;
   direction: ltr;
   margin: 0;
   padding: 0;
@@ -84,7 +84,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6, input, textarea {
-  font-family: iranyekanfn !important;
+  font-family: Segoe UI !important;
 }
 
 h1 {
@@ -233,7 +233,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 button {
-  font-family: iranyekanfn !important;
+  font-family: Segoe UI !important;
   cursor: pointer;
 }
 
@@ -260,7 +260,7 @@ li::before {
   bottom: 0;
   margin-top: auto;
   margin-bottom: auto;
-  right: 0;
+  left: -10px;
 }
 
 .darkListStyle::before {
@@ -308,7 +308,7 @@ label {
   display: block;
   margin-bottom: 15px;
   font-size: 13px;
-  text-align: right;
+  text-align: left;
   width: 100%;
 }
 
@@ -324,7 +324,7 @@ input[type=text], input[type=password], input[type=email], input[type=tel], inpu
   border-radius: 5px;
   color: #505050;
   font-size: 14px;
-  margin-right: -2px;
+  margin-left: -5px;
 }
 input[type=text]::-webkit-input-placeholder, input[type=password]::-webkit-input-placeholder, input[type=email]::-webkit-input-placeholder, input[type=tel]::-webkit-input-placeholder, input[type=url]::-webkit-input-placeholder {
   color: #929292;
@@ -377,6 +377,7 @@ textarea {
   border: 1px solid #eeeeee;
   color: #505050;
   font-size: 14px;
+  margin-left: -5px;
 }
 textarea::-webkit-input-placeholder {
   color: #929292;
@@ -404,12 +405,12 @@ select {
   width: 100%;
   padding: 15px 10px;
   border: 1px solid #e2e5fc;
-  font-family: iranyekanfn !important;
+  font-family: Segoe UI !important;
   background-color: transparent;
-  margin-right: -2px;
+  margin-left: -5px;
 }
 select option {
-  font-family: iranyekanfn !important;
+  font-family: Segoe UI !important;
 }
 
 .generalButton {
@@ -528,6 +529,13 @@ table td strong {
   font-weight: 600;
 }
 
+.evaluationForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
 .evaluationForm .evaluationFormStep1Section1, .evaluationForm .evaluationFormStep1Section2, .evaluationForm .evaluationFormStep2Section1, .evaluationForm .evaluationFormStep2Section2, .evaluationForm .evaluationFormStep3Section1, .evaluationForm .evaluationFormStep3Section2 {
   display: flex;
   justify-content: space-around;
@@ -557,21 +565,8 @@ table td strong {
   background-color: #eeeeee;
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAABSElEQVR4nNWTPU7DQBCF3QA1glNAOAINVByAG3geQYgb5AqgWEEgDpBmRqGk4ecEFsySQEEFRyCQjiho7fw4eNfGdBlpmt3x5zezb4JgYcMwtgwjMoyeEXwlyeipoKmdeu3PoNfr4xUjOFehoRGMPPmtTGc93l8uhzHuC0C/864QapguKsCSVEHLO7OSNr3tP0q46QJG/4CNEpWM0zxQ6HlaxGgYoT3DGOQAyVly15idUTcHVEY/80fzcnW0phzuzEEZA3uW3sFk6vuFwLSING5j3Ui4rUKfY/DuU/twVQXxvHL6KG45A50onSkjzY+BHC0Lmu6Bp0rdyjBReJIHduo1awHnB4w3Fbz7bPPABxtOL9p1qmwbRhT4wq6RMt1W8N9NfIklL3AKFbS87Y/btMpKYUEm7DrZDbAvaG2TWoe69gG8M1uI+AFunVwYqMItXgAAAABJRU5ErkJggg==");
   background-repeat: no-repeat;
-  background-position: left 12px center;
+  background-position: right 12px center;
   border: none;
-}
-.evaluationForm .evaluationFormStep1Section3, .evaluationForm .evaluationFormStep3Section3 {
-  padding-right: 150px;
-}
-@media screen and (max-width: 768px) {
-  .evaluationForm .evaluationFormStep1Section3, .evaluationForm .evaluationFormStep3Section3 {
-    padding: 0px;
-  }
-}
-.evaluationForm .evaluationFormStep1Section3 .evaluationFormInner5, .evaluationForm .evaluationFormStep1Section3 .evaluationFormInner14, .evaluationForm .evaluationFormStep3Section3 .evaluationFormInner5, .evaluationForm .evaluationFormStep3Section3 .evaluationFormInner14 {
-  height: 46px;
-  padding: 20px 0px;
-  width: 28.7%;
 }
 @media screen and (max-width: 768px) {
   .evaluationForm .evaluationFormStep1Section3 .evaluationFormInner5, .evaluationForm .evaluationFormStep1Section3 .evaluationFormInner14, .evaluationForm .evaluationFormStep3Section3 .evaluationFormInner5, .evaluationForm .evaluationFormStep3Section3 .evaluationFormInner14 {
@@ -586,7 +581,7 @@ table td strong {
   background-color: #eeeeee;
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAABSElEQVR4nNWTPU7DQBCF3QA1glNAOAINVByAG3geQYgb5AqgWEEgDpBmRqGk4ecEFsySQEEFRyCQjiho7fw4eNfGdBlpmt3x5zezb4JgYcMwtgwjMoyeEXwlyeipoKmdeu3PoNfr4xUjOFehoRGMPPmtTGc93l8uhzHuC0C/864QapguKsCSVEHLO7OSNr3tP0q46QJG/4CNEpWM0zxQ6HlaxGgYoT3DGOQAyVly15idUTcHVEY/80fzcnW0phzuzEEZA3uW3sFk6vuFwLSING5j3Ui4rUKfY/DuU/twVQXxvHL6KG45A50onSkjzY+BHC0Lmu6Bp0rdyjBReJIHduo1awHnB4w3Fbz7bPPABxtOL9p1qmwbRhT4wq6RMt1W8N9NfIklL3AKFbS87Y/btMpKYUEm7DrZDbAvaG2TWoe69gG8M1uI+AFunVwYqMItXgAAAABJRU5ErkJggg==");
   background-repeat: no-repeat;
-  background-position: left 12px center;
+  background-position: right 12px center;
   border: none;
 }
 .evaluationForm .step4 .evaluationFormStep4Section1 label {
@@ -598,6 +593,23 @@ table td strong {
   width: 50% !important;
   background-color: #eeeeee;
   border: none;
+}
+@media screen and (max-width: 480px) {
+  .evaluationForm {
+    width: 100%;
+  }
+}
+.evaluationForm .evaluationGeneralFormStep {
+  display: flex;
+  justify-content: space-between;
+}
+.evaluationForm .evaluationGeneralFormStep .evaluationFormInner {
+  width: 35%;
+}
+@media screen and (max-width: 480px) {
+  .evaluationForm .evaluationGeneralFormStep .evaluationFormInner {
+    width: 100%;
+  }
 }
 
 .faqContainer .faqItem {

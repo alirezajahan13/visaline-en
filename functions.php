@@ -222,25 +222,29 @@ add_filter('wpcf7_validate_text*', 'custom_phone_validation_filter', 20, 2);
 
 function custom_phone_validation_filter($result, $tag) {
     // Check if the field has either data-name attribute
-    if ('evalPhone' == $tag->name || 'bookPhone' == $tag->name) {
-        $thePhone = isset($_POST[$tag->name]) ? trim($_POST[$tag->name]) : '';
-
-        // Define your custom phone number format using a regular expression
-        $customPhoneFormat = '/^09[0-9]{9}$/';
-
-        if (!preg_match($customPhoneFormat, $thePhone)) {
-            // If the phone number doesn't match the custom format, set a validation error message
-            $result->invalidate($tag, "فرمت شماره همراه صحیح نیست");
-        }
-    }
-	if ('evalAge' == $tag->name ){
+	if ('evalPhone' == $tag->name || 'bookPhone' == $tag->name) {
+		$thePhone = isset($_POST[$tag->name]) ? trim($_POST[$tag->name]) : '';
+		
+		// Define your custom phone number format using a regular expression
+		$customPhoneFormat = '/^[۰-۹0-9]{10}$/u'; // افزودن ۰-۹ به مجموعه نمادهای قابل قبول
+	
+		// Use preg_match to support Persian (Farsi) and Arabic numbers
+		if (!preg_match($customPhoneFormat, $thePhone)) {
+			// If the phone number doesn't match the custom format, set a validation error message
+			$result->invalidate($tag, "فرمت شماره همراه صحیح نیست");
+		}
+	}
+	if ('evalAge' == $tag->name){
 		$theAge = isset($_POST[$tag->name]) ? trim($_POST[$tag->name]) : '';
 		
-		if (!preg_match('/^[0-9]{2}$/', $theAge) || $theAge < 15 || $theAge > 99 ) {
-            // If the phone number doesn't match the custom format, set a validation error message
-            $result->invalidate($tag, "سن به درستی وارد نشده است");
-        }
-	}
+		// Define your custom age format using a regular expression
+		$customAgeFormat = '/^[۰-۹0-9]{2}$/u'; // افزودن ۰-۹ به مجموعه نمادهای قابل قبول
+	
+		if (!preg_match($customAgeFormat, $theAge) || $theAge < 15 || $theAge > 99) {
+			// If the age doesn't match the custom format or is outside the valid range, set a validation error message
+			$result->invalidate($tag, "سن به درستی وارد نشده است");
+		}
+	}	
 	if ('evalName' == $tag->name ){
 		$theName = isset($_POST[$tag->name]) ? trim($_POST[$tag->name]) : '';
 		
@@ -351,4 +355,24 @@ function truncateString($inputString, $wordLimit) {
         $truncatedString = implode(' ', array_slice($words, 0, $wordLimit));
         return $truncatedString . '...';
     }
+}
+
+function pagination_bar() {
+	global $wp_query;
+
+	$total_pages = $wp_query->max_num_pages;
+
+	if ($total_pages > 1){
+		// $current_page = max(1, get_query_var('paged'));
+		global $wp_query;
+		$wp_query->query_vars['paged'] > 1 ? $current = $wp_query->query_vars['paged'] : $current = 1;
+		echo paginate_links(array(
+			'base' =>@add_query_arg('paged','%#%'),
+			'format' => '/page/%#%',
+			'current' => $current,
+			'total' => $total_pages,
+			'next_text' => '<span class="leftArrow"><svg width="12px" height="12px" xmlns="http://www.w3.org/2000/svg" fill="#505050" id="Layer_1" x="0" y="0" version="1.1" viewBox="0 0 29 29" xml:space="preserve"><path fill="none" stroke="#505050" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="m20.5 26.5-12-12 12-12"></path></svg></span>',
+			'prev_text' => '<span class="rightArrow"><svg width="12px" height="12px" xmlns="http://www.w3.org/2000/svg" fill="#505050" id="Layer_1" x="0" y="0" version="1.1" viewBox="0 0 29 29" xml:space="preserve"><path fill="none" stroke="#505050" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="m8.5 2.5 12 12-12 12"></path></svg></span>'
+		));
+	}
 }

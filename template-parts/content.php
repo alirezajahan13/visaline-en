@@ -24,9 +24,9 @@
 		</header><!-- .entry-header -->
 		<?php visaline_post_thumbnail(); ?>
 		<div class="archivePostFooter mediumPadding">
-			<span class="centerFooter">نوشته شده در </span>
+			<span class="centerFooter">Written on : </span>
 			<span><?php echo get_the_date() ?></span>
-			<span class="centerFooter">توسط:</span>
+			<span class="centerFooter">By : </span>
 			<span><?php echo get_the_author() ?></span>
 		</div>
 <div class="generalSinglePostStyle lightBorder lowRadius mediumPadding mediumMargined">

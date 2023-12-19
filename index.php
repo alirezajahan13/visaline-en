@@ -23,7 +23,7 @@ get_header();
 			if ( is_home() && ! is_front_page() ) :
 				?>
 				<div class="generalHeading highMargined centeredText">
-					<h1>مجله ویزالاین</h1>
+					<h1>Visaline Blog</h1>
 				</div>
 				<?php
 			endif;

@@ -30,20 +30,20 @@
                 background-color: #eeeeee;
                 background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAABSElEQVR4nNWTPU7DQBCF3QA1glNAOAINVByAG3geQYgb5AqgWEEgDpBmRqGk4ecEFsySQEEFRyCQjiho7fw4eNfGdBlpmt3x5zezb4JgYcMwtgwjMoyeEXwlyeipoKmdeu3PoNfr4xUjOFehoRGMPPmtTGc93l8uhzHuC0C/864QapguKsCSVEHLO7OSNr3tP0q46QJG/4CNEpWM0zxQ6HlaxGgYoT3DGOQAyVly15idUTcHVEY/80fzcnW0phzuzEEZA3uW3sFk6vuFwLSING5j3Ui4rUKfY/DuU/twVQXxvHL6KG45A50onSkjzY+BHC0Lmu6Bp0rdyjBReJIHduo1awHnB4w3Fbz7bPPABxtOL9p1qmwbRhT4wq6RMt1W8N9NfIklL3AKFbS87Y/btMpKYUEm7DrZDbAvaG2TWoe69gG8M1uI+AFunVwYqMItXgAAAABJRU5ErkJggg==");
                 background-repeat: no-repeat;
-                background-position: left 12px center;
+                background-position: right 12px center;
                 border: none;
             }
         }
     }
     .evaluationFormStep1Section3 , .evaluationFormStep3Section3{
-        padding-right: 150px;
-        @include sm{
-            padding: 0px;
-        }
+        // padding-right: 150px;
+        // @include sm{
+        //     padding: 0px;
+        // }
         .evaluationFormInner5 , .evaluationFormInner14{
-            height: 46px;
-            padding: 20px 0px;
-            width: 28.7%;
+            // height: 46px;
+            // padding: 20px 0px;
+            // width: 28.7%;
             @include sm{
                 width: 100%;
             }
@@ -54,7 +54,7 @@
                     background-color: #eeeeee;
                     background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAABSElEQVR4nNWTPU7DQBCF3QA1glNAOAINVByAG3geQYgb5AqgWEEgDpBmRqGk4ecEFsySQEEFRyCQjiho7fw4eNfGdBlpmt3x5zezb4JgYcMwtgwjMoyeEXwlyeipoKmdeu3PoNfr4xUjOFehoRGMPPmtTGc93l8uhzHuC0C/864QapguKsCSVEHLO7OSNr3tP0q46QJG/4CNEpWM0zxQ6HlaxGgYoT3DGOQAyVly15idUTcHVEY/80fzcnW0phzuzEEZA3uW3sFk6vuFwLSING5j3Ui4rUKfY/DuU/twVQXxvHL6KG45A50onSkjzY+BHC0Lmu6Bp0rdyjBReJIHduo1awHnB4w3Fbz7bPPABxtOL9p1qmwbRhT4wq6RMt1W8N9NfIklL3AKFbS87Y/btMpKYUEm7DrZDbAvaG2TWoe69gG8M1uI+AFunVwYqMItXgAAAABJRU5ErkJggg==");
                     background-repeat: no-repeat;
-                    background-position: left 12px center;
+                    background-position: right 12px center;
                     border: none;
                 }
             }
@@ -73,6 +73,24 @@
                     background-color: #eeeeee;
                     border: none;
                 }
+            }
+        }
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    @include xs{
+        width: 100%;
+    }
+    .evaluationGeneralFormStep{
+        display: flex;
+        justify-content: space-between;
+        .evaluationFormInner{
+            width: 35%;
+            @include xs{
+                width: 100%;
             }
         }
     }

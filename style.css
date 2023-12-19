@@ -55,7 +55,7 @@
   src: url("fonts/iranyekanfn/fonts/eot/iranyekanwebextrablackfanum.eot?#iefix") format("embedded-opentype"), url("fonts/iranyekanfn/fonts/woff/iranyekanwebextrablackfanum.woff") format("woff"), url("fonts/iranyekanfn/fonts/ttf/iranyekanwebextrablackfanum.ttf") format("truetype");
 }
 body {
-  font-family: iranyekanfn !important;
+  font-family: Segoe UI !important;
   direction: ltr;
   margin: 0;
   padding: 0;
@@ -84,7 +84,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6, input, textarea {
-  font-family: iranyekanfn !important;
+  font-family: Segoe UI !important;
 }
 
 h1 {
@@ -233,7 +233,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 button {
-  font-family: iranyekanfn !important;
+  font-family: Segoe UI !important;
   cursor: pointer;
 }
 
@@ -260,7 +260,7 @@ li::before {
   bottom: 0;
   margin-top: auto;
   margin-bottom: auto;
-  right: 0;
+  left: -10px;
 }
 
 .darkListStyle::before {
@@ -308,7 +308,7 @@ label {
   display: block;
   margin-bottom: 15px;
   font-size: 13px;
-  text-align: right;
+  text-align: left;
   width: 100%;
 }
 
@@ -324,7 +324,7 @@ input[type=text], input[type=password], input[type=email], input[type=tel], inpu
   border-radius: 5px;
   color: #505050;
   font-size: 14px;
-  margin-right: -2px;
+  margin-left: -5px;
 }
 input[type=text]::-webkit-input-placeholder, input[type=password]::-webkit-input-placeholder, input[type=email]::-webkit-input-placeholder, input[type=tel]::-webkit-input-placeholder, input[type=url]::-webkit-input-placeholder {
   color: #929292;
@@ -377,6 +377,7 @@ textarea {
   border: 1px solid #eeeeee;
   color: #505050;
   font-size: 14px;
+  margin-left: -5px;
 }
 textarea::-webkit-input-placeholder {
   color: #929292;
@@ -404,12 +405,12 @@ select {
   width: 100%;
   padding: 15px 10px;
   border: 1px solid #e2e5fc;
-  font-family: iranyekanfn !important;
+  font-family: Segoe UI !important;
   background-color: transparent;
-  margin-right: -2px;
+  margin-left: -5px;
 }
 select option {
-  font-family: iranyekanfn !important;
+  font-family: Segoe UI !important;
 }
 
 .generalButton {
@@ -758,7 +759,7 @@ table td strong {
   align-items: center;
 }
 .mainHeaderBack .mainHeader .menuSection ul li a svg {
-  margin-left: 5px;
+  margin-right: 5px;
   transition: all 0.3s;
 }
 .mainHeaderBack .mainHeader .menuSection ul li a .menu-icon {
@@ -777,7 +778,7 @@ table td strong {
   display: flex;
   flex-direction: column;
   width: 200px;
-  right: 0;
+  left: 0;
   top: 112%;
   visibility: hidden;
   opacity: 0;
@@ -791,7 +792,7 @@ table td strong {
   position: relative;
 }
 .mainHeaderBack .mainHeader .menuSection ul .menu-item-has-children ul li:hover a {
-  transform: translateX(-5px);
+  transform: translateX(5px);
 }
 .mainHeaderBack .mainHeader .menuSection ul .menu-item-has-children ul li a {
   transition: all 0.3s;
@@ -808,13 +809,13 @@ table td strong {
 .mainHeaderBack .mainHeader .menuSection ul .menu-item-has-children ul li::after {
   position: absolute;
   content: url("data:image/svg+xml,%3Csvg width='10' height='10' fill='%23d1ab66' viewBox='40 40 177 170' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M215.391 163.062A8 8 0 0 1 208 168H48a8 8 0 0 1-5.657-13.657l80-80a8 8 0 0 1 11.314 0l80 80a8 8 0 0 1 1.734 8.719Z'/%3E%3C/svg%3E");
-  right: 12px;
+  left: 12px;
   top: 0;
   bottom: 0;
   margin-top: auto;
   margin-bottom: auto;
   height: 10px;
-  transform: rotate(-90deg);
+  transform: rotate(90deg);
 }
 .mainHeaderBack .mainHeader .menuSection ul .menu-item-has-children:hover ul {
   visibility: visible;
@@ -825,6 +826,7 @@ table td strong {
 }
 .mainHeaderBack .mainHeader .menuSection .languageLinkWebsite img {
   display: block;
+  border-radius: 3px;
 }
 .mainHeaderBack .mainHeader .menuSection .searchIcon {
   display: flex;
@@ -1015,6 +1017,9 @@ table td strong {
     border-radius: 4px !important;
     margin: 5px 0px;
   }
+}
+.introSectionBack .introSection .bookAppointmentSection .formIntroSection .formIntroSectionInput span input.wpcf7-tel {
+  padding-left: 60px;
 }
 .introSectionBack .introSection .bookAppointmentSection .formIntroSection .formIntroSectionSubmit {
   width: 27%;
@@ -1624,7 +1629,7 @@ table td strong {
   position: relative;
   top: 85px;
   margin: 0 auto;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 22.51 22.51'%3E%3Cpath d='M11.255 0A11.255 11.255 0 1 0 22.51 11.255 11.254 11.254 0 0 0 11.255 0Zm2.348 15.644a1.048 1.048 0 0 1 0 1.477 1.032 1.032 0 0 1-.736.3 1.05 1.05 0 0 1-.741-.308l-5.086-5.1a1.043 1.043 0 0 1 .032-1.439l5.163-5.179a1.045 1.045 0 0 1 1.477 1.477L9.28 11.255Z' fill='%23fff'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 22.51 22.51' transform='rotate(180)'%3E%3Cpath d='M11.255 0A11.255 11.255 0 1 0 22.51 11.255 11.254 11.254 0 0 0 11.255 0Zm2.348 15.644a1.048 1.048 0 0 1 0 1.477 1.032 1.032 0 0 1-.736.3 1.05 1.05 0 0 1-.741-.308l-5.086-5.1a1.043 1.043 0 0 1 .032-1.439l5.163-5.179a1.045 1.045 0 0 1 1.477 1.477L9.28 11.255Z' fill='%23fff'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 12px center;
   padding: 13px 25px;
@@ -1764,18 +1769,18 @@ table td strong {
   background-color: #d1ab66;
   display: flex;
   align-items: center;
-  padding: 5px 12px !important;
+  padding: 7px 12px !important;
 }
 .activeStep span {
   font-size: 13px;
+}
+.activeStep svg {
+  margin-right: 3px;
 }
 
 @media screen and (max-width: 480px) {
   .evaluationSection h2 {
     font-size: 16px;
-  }
-  .evaluationSection p {
-    font-size: 13px;
   }
 }
 
@@ -1787,7 +1792,7 @@ table td strong {
 }
 @media screen and (max-width: 768px) {
   .step4 .evaluationFormStep4Section1 label {
-    font-size: 11px;
+    font-size: 12px;
   }
 }
 .step4 .evaluationFormStep4Section1 span textarea {
@@ -1806,10 +1811,10 @@ table td strong {
   width: 22%;
   position: absolute;
   bottom: -76px;
-  left: 25px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 22.51 22.51'%3E%3Cpath d='M11.255 0A11.255 11.255 0 1 0 22.51 11.255 11.254 11.254 0 0 0 11.255 0Zm2.348 15.644a1.048 1.048 0 0 1 0 1.477 1.032 1.032 0 0 1-.736.3 1.05 1.05 0 0 1-.741-.308l-5.086-5.1a1.043 1.043 0 0 1 .032-1.439l5.163-5.179a1.045 1.045 0 0 1 1.477 1.477L9.28 11.255Z' fill='%23fff'/%3E%3C/svg%3E");
+  right: 25px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 22.51 22.51' transform='rotate(180)'%3E%3Cpath d='M11.255 0A11.255 11.255 0 1 0 22.51 11.255 11.254 11.254 0 0 0 11.255 0Zm2.348 15.644a1.048 1.048 0 0 1 0 1.477 1.032 1.032 0 0 1-.736.3 1.05 1.05 0 0 1-.741-.308l-5.086-5.1a1.043 1.043 0 0 1 .032-1.439l5.163-5.179a1.045 1.045 0 0 1 1.477 1.477L9.28 11.255Z' fill='%23fff'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
-  background-position: left 20px center;
+  background-position: right 20px center;
   padding: 10px !important;
   border-radius: 5px !important;
 }
@@ -1841,8 +1846,8 @@ table td strong {
   justify-content: flex-start;
   position: absolute;
   top: -15px;
-  right: 45px;
-  left: 0;
+  right: 0;
+  left: 45px;
 }
 @media screen and (max-width: 768px) {
   .levelsNavbarContainer {
@@ -1868,7 +1873,7 @@ table td strong {
 }
 @media screen and (max-width: 768px) {
   .evaluationPageParent {
-    min-height: 1200px;
+    min-height: 1000px;
   }
 }
 .evaluationPageParent .evaluationSection {
@@ -1897,39 +1902,16 @@ table td strong {
   overflow: visible !important;
 }
 .evaluationPageParent .evaluationFormContainer form .fieldset-cf7mls-wrapper .cf7mls-btns {
-  min-height: unset;
-  top: 74px;
-  position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 @media screen and (max-width: 768px) {
   .evaluationPageParent .evaluationFormContainer form .fieldset-cf7mls-wrapper .cf7mls-btns {
     flex-direction: column;
     align-items: center;
-  }
-}
-.evaluationPageParent .evaluationFormContainer form .fieldset-cf7mls-wrapper .cf7mls-btns #cf7mls-next-btn-cf7mls_step-1 {
-  display: inline-block;
-  margin: auto;
-  top: -4px;
-}
-.evaluationPageParent .evaluationFormContainer form .fieldset-cf7mls-wrapper .cf7mls-btns #cf7mls-back-btn-cf7mls_step-2, .evaluationPageParent .evaluationFormContainer form .fieldset-cf7mls-wrapper .cf7mls-btns #cf7mls-back-btn-cf7mls_step-3 {
-  right: 10px;
-  top: 22px;
-}
-@media screen and (max-width: 768px) {
-  .evaluationPageParent .evaluationFormContainer form .fieldset-cf7mls-wrapper .cf7mls-btns #cf7mls-back-btn-cf7mls_step-2, .evaluationPageParent .evaluationFormContainer form .fieldset-cf7mls-wrapper .cf7mls-btns #cf7mls-back-btn-cf7mls_step-3 {
-    right: 0px;
-  }
-}
-.evaluationPageParent .evaluationFormContainer form .fieldset-cf7mls-wrapper .cf7mls-btns #cf7mls-next-btn-cf7mls_step-2, .evaluationPageParent .evaluationFormContainer form .fieldset-cf7mls-wrapper .cf7mls-btns #cf7mls-next-btn-cf7mls_step-3 {
-  left: 10px;
-  top: 22px;
-}
-@media screen and (max-width: 768px) {
-  .evaluationPageParent .evaluationFormContainer form .fieldset-cf7mls-wrapper .cf7mls-btns #cf7mls-next-btn-cf7mls_step-2, .evaluationPageParent .evaluationFormContainer form .fieldset-cf7mls-wrapper .cf7mls-btns #cf7mls-next-btn-cf7mls_step-3 {
-    left: 0px;
   }
 }
 .evaluationPageParent .evaluationFormContainer form #cf7mls-back-btn-cf7mls_step-4 {
@@ -1940,15 +1922,15 @@ table td strong {
 .evaluationPageParent .evaluationFormContainer form .cf7mls_next {
   background-color: #d1ab66 !important;
   border: none !important;
-  padding: 10px 60px !important;
+  padding: 15px 30px !important;
   width: 22%;
   border-radius: 5px !important;
   position: relative !important;
   transition: all 0.3s;
   color: #fff !important;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 22.51 22.51'%3E%3Cpath d='M11.255 0A11.255 11.255 0 1 0 22.51 11.255 11.254 11.254 0 0 0 11.255 0Zm2.348 15.644a1.048 1.048 0 0 1 0 1.477 1.032 1.032 0 0 1-.736.3 1.05 1.05 0 0 1-.741-.308l-5.086-5.1a1.043 1.043 0 0 1 .032-1.439l5.163-5.179a1.045 1.045 0 0 1 1.477 1.477L9.28 11.255Z' fill='%23fff'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 22.51 22.51' transform='rotate(180)'%3E%3Cpath d='M11.255 0A11.255 11.255 0 1 0 22.51 11.255 11.254 11.254 0 0 0 11.255 0Zm2.348 15.644a1.048 1.048 0 0 1 0 1.477 1.032 1.032 0 0 1-.736.3 1.05 1.05 0 0 1-.741-.308l-5.086-5.1a1.043 1.043 0 0 1 .032-1.439l5.163-5.179a1.045 1.045 0 0 1 1.477 1.477L9.28 11.255Z' fill='%23fff'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
-  background-position: left 15px center;
+  background-position: right 15px center;
 }
 @media screen and (max-width: 768px) {
   .evaluationPageParent .evaluationFormContainer form .cf7mls_next {
@@ -1961,15 +1943,15 @@ table td strong {
 .evaluationPageParent .evaluationFormContainer form .cf7mls_back, .evaluationPageParent .evaluationFormContainer form #cf7mls-back-btn-cf7mls_step-4 {
   background-color: #505050 !important;
   border: none !important;
-  padding: 10px 60px !important;
+  padding: 15px 30px !important;
   width: 22%;
   border-radius: 5px !important;
   position: relative !important;
   transition: all 0.3s;
   color: #fff !important;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 22.51 22.51' transform='rotate(180)'%3E%3Cpath d='M11.255 0A11.255 11.255 0 1 0 22.51 11.255 11.254 11.254 0 0 0 11.255 0Zm2.348 15.644a1.048 1.048 0 0 1 0 1.477 1.032 1.032 0 0 1-.736.3 1.05 1.05 0 0 1-.741-.308l-5.086-5.1a1.043 1.043 0 0 1 .032-1.439l5.163-5.179a1.045 1.045 0 0 1 1.477 1.477L9.28 11.255Z' fill='%23fff'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 22.51 22.51'%3E%3Cpath d='M11.255 0A11.255 11.255 0 1 0 22.51 11.255 11.254 11.254 0 0 0 11.255 0Zm2.348 15.644a1.048 1.048 0 0 1 0 1.477 1.032 1.032 0 0 1-.736.3 1.05 1.05 0 0 1-.741-.308l-5.086-5.1a1.043 1.043 0 0 1 .032-1.439l5.163-5.179a1.045 1.045 0 0 1 1.477 1.477L9.28 11.255Z' fill='%23fff'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
-  background-position: right 15px center;
+  background-position: left 15px center;
 }
 @media screen and (max-width: 768px) {
   .evaluationPageParent .evaluationFormContainer form .cf7mls_back, .evaluationPageParent .evaluationFormContainer form #cf7mls-back-btn-cf7mls_step-4 {
@@ -2492,7 +2474,7 @@ table td strong {
   font-weight: 300;
 }
 .singlePost .archivePostFooter .centerFooter {
-  margin: 0 5px;
+  margin: 0 5px 0 15px;
 }
 .singlePost .comments-area {
   background-color: #f8f8f8;
