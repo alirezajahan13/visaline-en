@@ -31,7 +31,7 @@ $(document).ready(function () {
     $('.bookConsultationForm input[name="bookMassage"]').val(getUrlParameter('cucsmassage'));
   }
     $('#nameClient').html(getUrlParameter('csname'));
-    if ($('body').hasClass('page-id-49')){
+    if ($('body').hasClass('page-id-130')){
       var wpcf7Elm = document.querySelector( '.wpcf7' );
       wpcf7Elm.addEventListener( 'wpcf7mailsent', function( event ) {
         let bookConsName = $('.bookConsultationForm span[data-name=bookName] input').val();
@@ -48,7 +48,7 @@ $(document).ready(function () {
     }
     
     $('#nameClientEval').html(getUrlParameter('evlname'));      
-    if ($('body').hasClass('page-id-65')){
+    if ($('body').hasClass('page-id-137')){
       var wpcf7Elm = document.querySelector( '.wpcf7' );
       wpcf7Elm.addEventListener( 'wpcf7mailsent', function( event ) {
         let evaluName = $('.evaluationFormContainer .evaluationFormStep1Section1 span[data-name=evalName] input').val();
@@ -59,7 +59,7 @@ $(document).ready(function () {
         window.location.href = 'https://visaline.idechy.ir/unsuccess-eform/?evlname='+evaluName;
       }, false );
     }
-    if ($('body').hasClass('page-id-49')){
+    if ($('body').hasClass('page-id-130')){
           // دریافت مقادیر از sessionStorage
           var form1_name = sessionStorage.getItem('form1_name') || '' || sessionStorage.getItem('formHome_name') || sessionStorage.getItem('formCuHome_name');
           var form1_number = sessionStorage.getItem('form1_number') || '' || sessionStorage.getItem('formHome_number') || sessionStorage.getItem('formCuHome_number');

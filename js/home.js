@@ -16,7 +16,7 @@ $(document).ready(function(){
   // });
 
 // custom-script.js
-if($('body').hasClass('page-id-35')){
+if($('body').hasClass('page-id-25')){
   $('.contactUsForm input[type=submit]').click(function(e) {
     // جلوگیری از ارسال فرم
     e.preventDefault();
@@ -38,7 +38,7 @@ if($('body').hasClass('page-id-35')){
 
 
 
-if($('body').hasClass('page-id-10')){
+if($('body').hasClass('page-id-11')){
   $('.bookAppointmentSection input[type=submit]').click(function(e) {
     // جلوگیری از ارسال فرم
     e.preventDefault();

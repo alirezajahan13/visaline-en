@@ -78,7 +78,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   src: url("fonts/iranyekanfn/fonts/eot/iranyekanwebextrablackfanum.eot?#iefix") format("embedded-opentype"), url("fonts/iranyekanfn/fonts/woff/iranyekanwebextrablackfanum.woff") format("woff"), url("fonts/iranyekanfn/fonts/ttf/iranyekanwebextrablackfanum.ttf") format("truetype");
 }
 body {
-  font-family: Segoe UI !important;
+  font-family: Verdana, Geneva, sans-serif !important;
   direction: ltr;
   margin: 0;
   padding: 0;

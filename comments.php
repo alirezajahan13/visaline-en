@@ -22,7 +22,7 @@ if ( post_password_required() ) {
 
 <div id="comments" class="comments-area lowRadius mediumPadding mediumMargined">
 	<div class="generalHeadig centeredText">
-		<h1>نظرات</h1>
+		<h1>Comments</h1>
 	</div>
 	<?php
 	// You can start editing here -- including this comment!

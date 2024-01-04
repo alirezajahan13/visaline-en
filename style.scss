@@ -1540,7 +1540,7 @@
 				}
 				.sub-menu{
 					display: none;
-					padding-right: 23px;
+					padding-left: 23px;
 					li{
 						margin: 20px 0px !important;
 						padding-right: 0;
@@ -1549,13 +1549,13 @@
 							&::after{
 								position: absolute;
 								content: url("data:image/svg+xml,%3Csvg width='12' height='12' fill='%23d1ab66' viewBox='40 40 177 170' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M215.391 163.062A8 8 0 0 1 208 168H48a8 8 0 0 1-5.657-13.657l80-80a8 8 0 0 1 11.314 0l80 80a8 8 0 0 1 1.734 8.719Z'/%3E%3C/svg%3E");
-								right: -20px;
+								left: -20px;
 								top: 0;
 								bottom: 0;
 								margin-top: auto;
 								margin-bottom: auto;
 								height: 10px;
-								transform: rotate(-90deg);
+								transform: rotate(90deg);
 							}
 						}
 					}

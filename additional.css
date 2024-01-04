@@ -55,7 +55,7 @@
   src: url("fonts/iranyekanfn/fonts/eot/iranyekanwebextrablackfanum.eot?#iefix") format("embedded-opentype"), url("fonts/iranyekanfn/fonts/woff/iranyekanwebextrablackfanum.woff") format("woff"), url("fonts/iranyekanfn/fonts/ttf/iranyekanwebextrablackfanum.ttf") format("truetype");
 }
 body {
-  font-family: Segoe UI !important;
+  font-family: Verdana, Geneva, sans-serif !important;
   direction: ltr;
   margin: 0;
   padding: 0;
@@ -663,6 +663,7 @@ table td strong {
   right: 0;
   bottom: 0;
   top: 0;
+  z-index: 9999999;
 }
 
 .summarySectionParent {

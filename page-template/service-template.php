@@ -17,9 +17,7 @@ $visaline_services_summary_section = get_field('visaline_services_summary_sectio
 ?>
 
 <div class="serviceSectionBack">
-
     <div class="serviceSection mainView">
-
         <div class="serviceSectionDesc centeredText">
             <?php echo $landing_header_section['icon']; ?>
             <h2 class="bigHeading"><?php echo $landing_header_section['title']; ?></h2>
@@ -28,12 +26,14 @@ $visaline_services_summary_section = get_field('visaline_services_summary_sectio
         <div class="summarySectionParent lightBorder highMargined lowRadius"  style="display:<?php if($visaline_services_summary_section['display_section']){echo "none";} ?>; background-color: <?php if($visaline_services_summary_section['bg_sSection']){echo "#8080801c";}?>">
             <h3><?php echo $visaline_services_summary_section['title_summary']; ?></h3>
             <p><?php echo $visaline_services_summary_section['text_summary']; ?></p>
-        </div> 
+        </div>
+        <?php if($visaline_services_sectionUp){?> 
         <?php foreach($visaline_services_sectionUp as $serviceSection){ ?>
             <div class="serviceBoxOne lightBorder lowRadius" style=" background-color: <?php if($serviceSection['bg_section']){echo "#8080801c";} ?>">
-                <div class="imageBox" style="order: <?php if($serviceSection['image_loc']){echo "2";} ?>;" >
+                <?php if($serviceSection['photo'] || $serviceSection['video'] || $serviceSection['script_video']){ ?>
+                <div class="imageBox" <?php if($serviceSection['image_loc']){echo "style='order: 2;'";} ?> >
                     <?php if($serviceSection['content_type'] == 'photo'){?>
-                        <img src="<?php echo $serviceSection['photo']['url'] ?>" alt="<?php echo $serviceSection['photo']['alt'] ?>" <?php if($serviceSection['image_display']){ echo "style='border-radius:100%;'";}?>>
+                        <?php if($serviceSection['photo']){ ?><img src="<?php echo $serviceSection['photo']['url']; ?>" alt="<?php echo $serviceSection['photo']['alt']; ?>" <?php if($serviceSection['image_display']){ echo "style='border-radius:100%;'";}?>><?php } ?>
                     <?php } elseif($serviceSection['content_type'] == 'video'){?>
                         <video width="100%" height="auto" controls>
                             <source src="<?php echo $serviceSection['video']['url']; ?>" type="video/mp4">
@@ -42,10 +42,13 @@ $visaline_services_summary_section = get_field('visaline_services_summary_sectio
                         echo $serviceSection['script_video'];
                     } ?>
                 </div>
-                <div class="textBox" style="order: <?php if($serviceSection['image_loc']){echo "1";} ?>;">
+                <?php } ?>
+                <?php if($serviceSection['title'] || $serviceSection['paragraph']){ ?>
+                <div class="textBox" <?php if($serviceSection['image_loc']){echo "style='order:1;'";} ?>">
                     <h3 class="bigHeading"><?php echo $serviceSection['title'] ?></h3>  
-                    <p><?php echo $serviceSection['paragraph'] ?></p>
+                    <?php if($serviceSection['paragraph']){ ?><p><?php echo $serviceSection['paragraph'] ?></p><?php } ?>
                 </div>
+                <?php } ?>
                 <?php if($serviceSection['extra_paragraph']){ ?>
                     <div class="extraTextInnerBox"><p><?php echo $serviceSection['extra_paragraph'] ?></p></div>
                 <?php } ?>
@@ -53,15 +56,16 @@ $visaline_services_summary_section = get_field('visaline_services_summary_sectio
             <?php if($serviceSection['show_form_intro_section']){ ?>
 
                 <div class="bookAppointmentSection lowRadius">
-                    <?php echo do_shortcode('[contact-form-7 id="22b6b60" title="رزرو وقت مشاوره (صفحه اصلی)"]') ?>
+                    <?php echo do_shortcode('[contact-form-7 id="ac69fce" title="book consultation (Home)"]') ?>
                 </div>
             <?php } ?>
+       <?php }?>
        <?php }
 
        if($service_faq_section){?>
        <div class="faqContainer">
             <div class="generalHeading highMargined centeredText">
-                <h2>سوالات متداول <?php echo $landing_header_section['title']; ?></h2>
+                <h2>FAQ's <?php echo $landing_header_section['title']; ?></h2>
             </div>
             <?php
                 foreach ($service_faq_section as $faq) { ?>
@@ -73,27 +77,22 @@ $visaline_services_summary_section = get_field('visaline_services_summary_sectio
                         <p class="faqAnswer"><?php echo $faq['answer']; ?></p>
                     </div>
                 <?php } ?>
-       </div>
+       </div><?php }
 
-       <?php } if($service_linked_other_services){ ?>
+        if($service_linked_other_services){ ?>
         <div class="serviceBoxFive highMargined">
             <div class="generalHeading highMargined centeredText">
-                <h2>مطالب مرتبط</h2>
+                <h2>Related posts</h2>
             </div>
             <div class="serviceGrid">
                 <?php
-                // echo '<pre>';
-                // print_r($service_linked_other_services);
-                // echo '</pre>';
                 foreach($service_linked_other_services as $linkOther){
                     $theLoopId = url_to_postid($linkOther);
                     $inner_landing_header_section = get_field('landing_header_section',$theLoopId )['subtitle'];
-                    // var_dump($inner_landing_header_section);
                     $title = get_the_title( $theLoopId );
                     $permalink = get_permalink( $theLoopId );
                     $featuredimage = get_the_post_thumbnail( $theLoopId );
                     $excerpt = truncateString($inner_landing_header_section , 20);
-                    // var_dump($excerpt);
                     ?>
                     <a href="<?php echo esc_url( $permalink ); ?>" class="generalItem lightBorder lowRadius">
                         <div class="grayimg"><?php echo ( $featuredimage ); ?></div>
@@ -104,28 +103,6 @@ $visaline_services_summary_section = get_field('visaline_services_summary_sectio
                     </a>
                 <?php } ?>
 
-                <!-- <div class="item-2 lightBorder lowRadius">
-                    <div class="grayimg"></div>
-                    <div class="text-item">
-                        <h5 class="bigHeading">ویزای توریستی</h5>
-                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p> 
-                    </div>
-                </div>
-                <div class="item-3 lightBorder lowRadius">
-                    <div class="grayimg"></div>
-                    <div class="text-item">
-                        <h5 class="bigHeading">ویزای توریستی</h5>
-                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p> 
-                    </div>
-
-                </div>
-                <div class="item-4 lightBorder lowRadius">
-                    <div class="grayimg"></div>
-                    <div class="text-item">
-                        <h5 class="bigHeading">ویزای توریستی</h5>
-                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p> 
-                    </div>
-                </div> -->
             </div>
         </div>
         <?php } ?>
